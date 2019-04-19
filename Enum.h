@@ -1,0 +1,56 @@
+#pragma once
+
+enum RENDER_TYPE
+{
+	SCREEN = 0,
+	SCROLL = 1
+};
+
+enum OBJECT_TYPE
+{
+	PLAYER,
+	BACKGROUND,
+	EFFECT,
+	UI,
+	OBJECT_END
+};
+
+enum PLAYER_TYPE
+{
+	PLAYER_LV1,
+	PLAYER_LV2,
+	PLAYER_LV3,
+	PLAYER_LV_END
+};
+
+enum STATE
+{
+	ATTACK = 1 << 0,
+	IDLE = 1 << 1,
+	MOVE = 1 << 2,
+	STATE_END
+};
+
+enum BULLET_TYPE
+{
+	ATTACK_TO_PLAYER,
+	ATTACK_TO_TOP_ENEMY,
+	ATTACK_TO_BOTTOM_ENEMY
+};
+
+enum ITEM_TYPE
+{
+	DOUBLE_JUMP,
+	SPEED_UP,
+	THREE_DIR,
+	RANGE_UP,
+	TRACKING,
+	NUCLEAR,
+	ITEM_END
+};
+
+enum ENDING_TYPE
+{
+	HAPPY,
+	BAD
+};
